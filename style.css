@@ -99,7 +99,7 @@ a, a:active, a:visited{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .connection li{
