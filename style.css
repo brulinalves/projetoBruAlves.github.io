@@ -1,0 +1,147 @@
+body{
+  background:  #000;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.imgback {
+   background: url(../imagens/anas-alshanti-feXpdV001o4-unsplash.jpg) #000;
+   background-size: cover;
+   opacity: 0.2;
+   width: 100%;
+   height: 70%;
+   position: absolute;
+   left: 0;
+ }
+
+ 
+ .container{
+  max-width: 800px;
+  margin: 0 auto;
+ }
+
+
+ .card{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 3px;
+  text-align: center;
+  margin-top: 100px;
+ }
+
+.card-profile {
+  max-height: 350px; 
+  max-width: 350px;
+  border-radius: 80%;      
+}
+
+.card-text >p{
+  display: block;
+  font-size: 50px;
+  line-height: 0.8;
+  max-width: 800px;
+}
+
+.card-text .name{
+  max-width: 800px;
+  font-family: 'Concert One', cursive;
+  font-size: 55px;
+  color:  #f15dcf;
+  text-align: center;
+  border-right: 2px solid;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 500ms steps(30) infinite normal,
+  typing 3s steps(30) 1s normal both;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11em;
+  }
+}
+
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(241, 93, 207, 0.75);
+  to {
+    border-right-color: transparent;
+  }
+}
+}
+  
+a, a:active, a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+
+.connection{
+  list-style: none;
+  margin: 15px 0 ;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.connection li{
+  flex-grow: 1;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.connection li a{
+  border-radius: 3px;
+  padding: 15px;
+  border: 1px solid  #f15dcf;
+  display:block;
+  font-size: 30px;
+}
+
+.connection a:hover{
+  background: #fff;
+  color:  #f15dcf;
+}
+
+.connection .icone{
+  font-size: 30px;
+}
+
+
+@media (min-width: 800px) {
+   .body, .imgback, .card, .connection{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+   }
+  } 
+
+  
+  @media (max-width: 600px) {
+    .body, .imgback, .card, .connection{
+      width: 100%;
+    }
+    .container{
+      width: 100%;
+     }
+  }
+ 
